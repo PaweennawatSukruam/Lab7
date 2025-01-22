@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.13 on win32)" generated="2025-01-08T11:13:57.575641" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT-Lab7-001" source="c:\SE\Lab7\LabTest\UAT-Lab7-001.robot">
+<test id="s1-t1" name="Open Form" line="5">
+<kw name="Open Form" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:13:57.795447" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Form.html'.</msg>
+<arg>${FORM URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T11:13:57.795447" elapsed="1.736878"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T11:13:59.532325" elapsed="0.035983"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-08T11:13:59.569380" elapsed="0.000000"/>
+</kw>
+<kw name="Form Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:00.090433" level="INFO">Page title is 'Customer Inquiry'.</msg>
+<arg>Customer Inquiry</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-08T11:13:59.570374" elapsed="0.520059"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:13:59.569380" elapsed="0.522011"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:13:57.795447" elapsed="2.295944"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-08T11:14:00.092390" elapsed="2.584102"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:13:57.794442" elapsed="4.883051"/>
+</test>
+<test id="s1-t2" name="Record Success" line="8">
+<kw name="Open Form" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:02.678493" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Form.html'.</msg>
+<arg>${FORM URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T11:14:02.678493" elapsed="2.222779"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-08T11:14:04.901272" elapsed="0.540962"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-08T11:14:05.442234" elapsed="0.000000"/>
+</kw>
+<kw name="Form Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:05.954653" level="INFO">Page title is 'Customer Inquiry'.</msg>
+<arg>Customer Inquiry</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-08T11:14:05.443191" elapsed="0.511462"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:14:05.443191" elapsed="0.511462"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:14:02.678493" elapsed="3.276160"/>
+</kw>
+<kw name="Input Info" owner="resource">
+<kw name="Input Firstname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:05.956652" level="INFO">Typing text 'Somsong' into text field 'firstname'.</msg>
+<arg>firstname</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:05.955653" elapsed="1.598941"/>
+</kw>
+<arg>${firstname}</arg>
+<status status="PASS" start="2025-01-08T11:14:05.955653" elapsed="1.598941"/>
+</kw>
+<kw name="Input Lastname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:07.556516" level="INFO">Typing text 'Sandee' into text field 'lastname'.</msg>
+<arg>lastname</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:07.555516" elapsed="1.603931"/>
+</kw>
+<arg>${lastname}</arg>
+<status status="PASS" start="2025-01-08T11:14:07.555516" elapsed="1.603931"/>
+</kw>
+<kw name="Input Destination" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:09.160411" level="INFO">Typing text 'Europe' into text field 'destination'.</msg>
+<arg>destination</arg>
+<arg>${destination}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:09.160411" elapsed="1.586085"/>
+</kw>
+<arg>${destination}</arg>
+<status status="PASS" start="2025-01-08T11:14:09.160411" elapsed="1.586085"/>
+</kw>
+<kw name="Input ContactPerson" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:10.747413" level="INFO">Typing text 'Sodsai Sandee' into text field 'contactperson'.</msg>
+<arg>contactperson</arg>
+<arg>${contactperson}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:10.747413" elapsed="1.602954"/>
+</kw>
+<arg>${contactperson}</arg>
+<status status="PASS" start="2025-01-08T11:14:10.746496" elapsed="1.603871"/>
+</kw>
+<kw name="Input Relationship" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:12.351384" level="INFO">Typing text 'Mother' into text field 'relationship'.</msg>
+<arg>relationship</arg>
+<arg>${relationship}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:12.351384" elapsed="1.573924"/>
+</kw>
+<arg>${relationship}</arg>
+<status status="PASS" start="2025-01-08T11:14:12.350367" elapsed="1.574941"/>
+</kw>
+<kw name="Input Email" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:13.926258" level="INFO">Typing text 'somsong@kkumail.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:13.926258" elapsed="1.578725"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-01-08T11:14:13.926258" elapsed="1.578725"/>
+</kw>
+<kw name="Input Phone" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:15.505984" level="INFO">Typing text '081-001-1234' into text field 'phone'.</msg>
+<arg>phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:15.505984" elapsed="1.583550"/>
+</kw>
+<arg>${phone}</arg>
+<status status="PASS" start="2025-01-08T11:14:15.504983" elapsed="1.584551"/>
+</kw>
+<arg>${VALID FIRSTNAME}</arg>
+<arg>${VALID LASTNAME}</arg>
+<arg>${VALID DESTINATION}</arg>
+<arg>${VALID CONTACTPERSON}</arg>
+<arg>${VALID RELATIONSHIP}</arg>
+<arg>${VALID EMAIL}</arg>
+<arg>${VALID PHONE}</arg>
+<status status="PASS" start="2025-01-08T11:14:05.955653" elapsed="11.133881"/>
+</kw>
+<kw name="Submit" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:17.090434" level="INFO">Clicking button 'submitButton'.</msg>
+<arg>submitButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-08T11:14:17.090434" elapsed="1.585603"/>
+</kw>
+<status status="PASS" start="2025-01-08T11:14:17.090434" elapsed="1.585603"/>
+</kw>
+<kw name="Complete Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-08T11:14:19.776116" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-08T11:14:19.776116" level="FAIL">Title should have been 'Completed' but was 'Customer Inquiry'.</msg>
+<arg>Completed</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-01-08T11:14:18.676947" elapsed="1.101178">Title should have been 'Completed' but was 'Customer Inquiry'.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${H1_TEXT}</var>
+<arg>xpath=//h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-08T11:14:19.778125" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H1_TEXT}</arg>
+<arg>Our agent will contact you shortly.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-01-08T11:14:19.778125" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${H2_TEXT}</var>
+<arg>xpath=//h2</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-08T11:14:19.778125" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${H2_TEXT}</arg>
+<arg>Thank you for your patient.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-01-08T11:14:19.778125" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-08T11:14:18.676947" elapsed="1.101178">Title should have been 'Completed' but was 'Customer Inquiry'.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-08T11:14:19.779123" elapsed="2.571125"/>
+</kw>
+<status status="FAIL" start="2025-01-08T11:14:02.677493" elapsed="19.672755">Title should have been 'Completed' but was 'Customer Inquiry'.</status>
+</test>
+<status status="FAIL" start="2025-01-08T11:13:57.577653" elapsed="24.773598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="UAT-Lab7-001">UAT-Lab7-001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
